@@ -111,6 +111,18 @@ img {
   gap: 1.5rem;
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #1a1a1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: var(--first-color-alt);
+}
 .button__header {
   display: none;
 }
@@ -165,6 +177,18 @@ img {
   .show-menu {
     top: calc(var(--header-height) + var(--mb-1));
   }
+}
+
+.home__container {
+  row-gap: 3rem;
+}
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+.home__description {
+  margin-bottom: var(--mb-2);
 }
 
 /*# sourceMappingURL=styles.css.map */
