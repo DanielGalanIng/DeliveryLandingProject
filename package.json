@@ -1,0 +1,21 @@
+{
+  "name": "deliverylandingproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-pug-sass-watch": "pug -w pug/index.pug -o html/ -P & sass --watch sass/:css/",
+    "compile-pug-sass": "pug pug/index.pug -o html/ -P && sass sass/:css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGalanIng/DeliveryLandingProject.git"
+  },
+  "author": "Daniel Galán <danielgalan0410@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielGalanIng/DeliveryLandingProject/issues"
+  },
+  "homepage": "https://github.com/DanielGalanIng/DeliveryLandingProject#readme"
+}
