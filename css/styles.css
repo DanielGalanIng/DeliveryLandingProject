@@ -191,4 +191,11 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.about__container {
+  gap: 2.5rem;
+}
+.about__data {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
