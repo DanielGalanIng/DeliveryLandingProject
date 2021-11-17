@@ -14,4 +14,11 @@
     &__header{
         display: none;
     }
+    &-link {
+        background: none;
+        color: var(--title-color);
+        &:hover{
+            background-color: var(--first-color-lighten);
+        }
+    }
 }
