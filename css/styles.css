@@ -133,6 +133,15 @@ img {
 .button-link:hover {
   background-color: var(--first-color-lighten);
 }
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+.button__icon {
+  font-size: 1.5rem;
+}
 
 .header {
   width: 100%;
@@ -228,6 +237,22 @@ img {
   width: 135px;
   justify-self: center;
   margin-bottom: var(--mb-0-5);
+}
+
+.app__container {
+  gap: 2.5rem;
+}
+.app__data {
+  text-align: center;
+}
+.app__description {
+  margin-bottom: var(--mb-1-5);
+}
+.app__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
