@@ -58,6 +58,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: 0.5s;
 }
 
 h1, h2, h3 {
@@ -140,6 +141,7 @@ img {
   align-items: center;
   column-gap: 0.25rem;
   padding: 0.75rem 1rem;
+  justify-content: center;
 }
 .button__icon {
   font-size: 1.5rem;
@@ -399,6 +401,59 @@ body.dark-theme {
 
 .dark-theme .footer {
   background-color: var(--container-color);
+}
+
+@media screen and (max-width: 360px) {
+  .svg__img {
+    width: 100%;
+  }
+
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+
+  .services__img {
+    width: 100px;
+  }
+
+  .app__buttons {
+    grid-template-columns: max-content;
+  }
+}
+@media screen and (min-width: 576px) {
+  .svg__img {
+    width: 100%;
+  }
+
+  .section__title-center {
+    text-align: initial;
+  }
+
+  .home__container, .about__container, .security__container, .services__container, .app__container, .contact__container, .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .home__container, .about__container, .security__container, .app__container, .contact__container {
+    align-items: center;
+  }
+
+  .about__data, .security__data, .security__description, .app__data,
+.contact__content {
+    text-align: initial;
+  }
+
+  .about__img, .app__img {
+    order: -1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
