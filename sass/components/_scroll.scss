@@ -24,5 +24,20 @@
 }
 
 .show-scroll{
-    bottom: 6rem;
+    bottom: 4rem;
+}
+
+//Scroll bar 
+
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: var(--scroll-bar-color);
+    &-thumb {
+        background-color: var(--scroll-thumb-color);
+        border-radius: .5rem;
+        &:hover {
+            background-color: var(--text-color-light);
+        }
+    }
 }

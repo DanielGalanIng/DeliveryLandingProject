@@ -362,7 +362,20 @@ img {
 }
 
 .show-scroll {
-  bottom: 6rem;
+  bottom: 4rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: var(--scroll-bar-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
 }
 
 /*# sourceMappingURL=styles.css.map */
