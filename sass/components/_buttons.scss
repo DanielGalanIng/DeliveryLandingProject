@@ -10,6 +10,8 @@
     transition: 0.3s;
     &:hover {
         background-color: var(--first-color-alt);
+        transform: scale(1.05,1.05);
+        transition: 400ms;
     }
     &__header{
         display: none;

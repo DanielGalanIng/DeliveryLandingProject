@@ -122,6 +122,8 @@ img {
 }
 .button:hover {
   background-color: var(--first-color-alt);
+  transform: scale(1.05, 1.05);
+  transition: 400ms;
 }
 .button__header {
   display: none;
@@ -157,6 +159,7 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .nav__menu {
@@ -193,6 +196,24 @@ img {
   .show-menu {
     top: calc(var(--header-height) + var(--mb-1));
   }
+}
+
+.active-link {
+  position: relative;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
+.scroll-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home__container {
@@ -313,6 +334,35 @@ img {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color);
+}
+
+.scrollup {
+  position: fixed;
+  background-color: var(--first-color);
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  transition: 400ms;
+}
+.scrollup:hover {
+  background-color: var(--first-color);
+  opacity: 1;
+}
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+.scrollup__icon:hover {
+  transform: scale(1, 1.2);
+  transition: 400ms;
+}
+
+.show-scroll {
+  bottom: 6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
