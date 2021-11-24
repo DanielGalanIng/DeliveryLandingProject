@@ -62,3 +62,34 @@ function showScroll() {
 }
 
 window.addEventListener('scroll', showScroll)
+
+//dark light theme 
+
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-toggle-right'
+
+// const selectTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
+
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentIcon = () => document.getElementById('theme-button').classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right'
+
+// if (selectTheme) {
+//   document.body.classList[selectTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+//   themeButton.classList[selectTheme === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
+// }
+
+const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)')
+
+if (darkThemeMq.matches) {
+  document.body.classList.add(darkTheme)
+  themeButton.classList.add(iconTheme)
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(iconTheme)
+  // localStorage.setItem('selected-theme', getCurrentTheme())
+  // localStorage.setItem('selected-icon', getCurrentIcon())
+})
