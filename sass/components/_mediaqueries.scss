@@ -42,4 +42,78 @@
     body {
         margin: 0;
     }
+    .section {
+        padding: 6rem 0 2rem;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+        &__list {
+            flex-direction: row;
+            column-gap: 2.5rem;
+        }
+        &__toggle {
+            display: none;
+        }
+    }
+    .change-theme {
+        position: initial;
+    }
+    .home__container {
+        padding: 6rem 0 2rem;
+    }
+    .app__buttons {
+        justify-content: initial;
+    }
+}
+
+@include media(desktop-s) {
+    .button__header {
+        display: block;
+    }
+    .svg__img {
+        width: 470px;
+    }
+    .about__container, .security__container, .app__container, .contact__container {
+        column-gap: 6rem;
+    }
+    .services__container {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .contact__container {
+        grid-template-columns: 3fr 1.5fr 1.25fr;
+    }
+    .footer {
+        &__container {
+            grid-template-columns: repeat(5,1fr);
+        }
+        &__social {
+            align-items: flex-start;
+            &-link {
+                font-size: 1.45rem;
+            }
+        }
+    }
+}
+
+@include media(desktop-m) {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .home {
+        &__img {
+            width: 540px;
+        }
+        &__description {
+            padding-right: 5rem;
+        }
+    }
+    .footer{
+        &__container {
+            column-gap: 3rem;
+        }
+    }
+    .scrollup {
+        right: 2rem;
+    }
 }
